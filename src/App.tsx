@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 function App() {
   const [topLeft, setTopLeft] = useState("0");
@@ -32,7 +32,7 @@ function App() {
   };
 
   const borderRadii = {
-    // borderRadius: `${topLeft}px ${topRight}px ${bottomRight}px ${bottomLeft}px`,
+    // borderRadius: `${topLeft}px ${topRight}px ${bottomRight}px ${bottomLeft}px`, TRY it again
     borderTopLeftRadius: `${topLeft}px`,
     borderTopRightRadius: `${topRight}px`,
     borderBottomRightRadius: `${bottomRight}px`,
@@ -80,7 +80,7 @@ function App() {
       <div
         className={`
           w-96 h-96 text-center border-2 border-slate-900
-        `}
+        `} // TRY to change radii with tailwind
         style={borderRadii}
       >
         <p className="text-xl">Change my borders</p>
